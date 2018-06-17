@@ -1,0 +1,24 @@
+pre {
+  width: auto;
+}
+
+.highlight {
+  pre {
+    border-left: 0;
+  }
+
+  code pre {
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .rouge-table {
+    tr, td, thead, tbody, tfooter {
+      border: 0;
+    }
+
+    .gutter {
+      padding-right: 1rem;
+    }
+  }
+}
