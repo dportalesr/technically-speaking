@@ -21,7 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.tecspeaking.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tecspeaking
 github_username: dportalesr
-highlighter: rouge
+highlighter: none
 
 # Build settings
 markdown: kramdown

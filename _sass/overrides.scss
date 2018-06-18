@@ -1,24 +1,15 @@
-pre {
-  width: auto;
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  border: 0;
+  left: 50%;
+  margin-left: -50vw;
+  position: relative;
+  width: 100vw;
 }
 
-.highlight {
-  pre {
-    border-left: 0;
-  }
+code[class*="language-"] {
+  @extend .container;
 
-  code pre {
-    margin: 0;
-    padding-left: 0;
-  }
-
-  .rouge-table {
-    tr, td, thead, tbody, tfooter {
-      border: 0;
-    }
-
-    .gutter {
-      padding-right: 1rem;
-    }
-  }
+  display: block;
+  margin: 0 auto;
 }
