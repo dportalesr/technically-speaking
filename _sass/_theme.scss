@@ -1,0 +1,37 @@
+// Blue theme
+
+// Color variables
+$blue: #009DDB; //#009DDB;
+$blue-light: #00b7ff;
+$gray-dark: #393e46;
+$gray: #40464f;
+$gray-light: #89929a;
+$gray-lightest: #e0e3e9;
+$white: #fff;
+
+// Config
+$color-background: $gray !default;
+$color-dot-accent: $blue-light !default;
+$color-foreground: $white !default;
+$color-title: $blue-light !default;
+$color-body-text: $gray !default;
+$color-text-accent: $blue !default;
+$color-code: $blue !default;
+$color-nav-link: $blue !default;
+$color-primary-link: $blue !default;
+$code-background-color: $gray;
+$code-foreground-color: $gray-lightest;
+$body-background-color: $gray-lightest;
+$color-border: $gray-light !default;
+
+.font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Import sass partials (used in all themes)
+@import "variables",
+        "base",
+        "components",
+        "utilities"
+;

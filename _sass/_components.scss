@@ -1,0 +1,106 @@
+.site-title {
+  font-size: 1.3rem;
+}
+
+.site-description {
+  color: $gray-lightest;
+}
+
+.prose {
+  line-height: 1.6;
+  font-size: $prose-font-size;
+
+  img {
+    max-width: 100%;
+  }
+
+  p, ul, ol, dl, blockquote, table, pre {
+  }
+
+  blockquote {
+    p {
+      font-size: 1.2rem;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  hr {
+    color: $color-border;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  dt {
+    font-weight: bold;
+    line-height: 1.25;
+  }
+
+  dd {
+    margin-bottom: 0.5em;
+  }
+
+  // Markdown tables
+  table {
+    border-collapse: collapse;
+    display: block;
+    width: 100%;
+    overflow: auto;
+    // For Firefox to horizontally scroll wider tables.
+    word-break: normal;
+    word-break: keep-all;
+
+    th {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      padding: $spacer-2 $spacer-3 $spacer-2 2px;
+      border-top: 1px solid $color-border;
+      border-bottom: 1px solid $color-border;
+    }
+
+    tr {
+      border-top: 1px solid $color-border;
+    }
+
+    tr th {
+      border-top: 2px solid $color-border;
+      border-bottom: 2px solid $color-border;
+    }
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    border: 0;
+    @extend %fullwidth;
+  }
+
+  code[class*="language-"] {
+    @extend .container;
+
+    display: block;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+}
+
+a.block {
+  .text-accent, .link-primary, p {
+    color: $color-body-text;
+  }
+
+  &:hover {
+    .text-accent, .link-primary, p {
+      color: inherit;
+    }
+  }
+}

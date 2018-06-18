@@ -3,6 +3,7 @@
 @charset "utf-8";
 
 // Import partials from `sass_dir` and set theme here
-@import "theme-{{ site.theme_color | default: "black" }}";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800,800i');
+
+@import "theme";
 @import "prism";
-@import "overrides";
