@@ -1,0 +1,28 @@
+@function map-getter($map_name, $index) {
+  $maps : (
+    spacers: $spacers,
+  );
+
+  @if map_has_key($maps, $map_name) {
+    $target_map: map-get($maps, $map_name);
+
+    @if map_has_key($target_map, $index) {
+      @return map-get($target_map, $index);
+    } @else {
+      @error "No such element with index #{$index} in $#{$map_name}";
+    }
+  } @else {
+    @error "No such map $#{$map_name}";
+  }
+}
+
+@function sp($index: 0) {
+  @return map-getter('spacers', $index);
+}
+
+@function clamp-unit($input, $min: 1, $max: false) {
+  $magnitude: $input / ($input * 0 + 1);
+  $unit: unit($input);
+  $result: if($max and $input > $max, $max, if($input < $min, $min, $input));
+  @return unquote("#{$result}#{if(unitless($result), $unit, '')}");
+}

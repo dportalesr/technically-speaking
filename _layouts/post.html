@@ -2,10 +2,10 @@
 layout: default
 ---
 <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
-  <h1 class="h0" itemprop="name headline">{{ page.title | markdownify | unwrap }}</h1>
+  <h1 class="" itemprop="name headline">{{ page.title | markdownify | unwrap }}</h1>
 
   <div class="my-3 border-top-thin">
-    <p class="mb-3 bold h4"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+    <p class="my-2 bold"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
   </div>
 
   <div class="prose" itemprop="articleBody">
