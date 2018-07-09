@@ -6,5 +6,5 @@
     <a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | markdownify | unwrap }}</a>
   </h2>
 
-  <p>{{ post.excerpt | strip_html }}</p>
+  <p>{{ post.excerpt | markdownify | strip_html }}</p>
 </div>

@@ -95,7 +95,10 @@ a {
   text-decoration: none;
 
   &:hover, &:focus {
-    text-decoration: underline;
+    text-decoration: underline dotted;
+  }
+  &:visited {
+    color: $color-secondary-link;
   }
 }
 
@@ -135,4 +138,9 @@ blockquote {
   margin-left: -50vw;
   position: relative;
   width: 100vw;
+}
+
+.font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

@@ -10,6 +10,10 @@
   line-height: 1.6;
   font-size: $prose-font-size;
 
+  a {
+    font-weight: $font-weight-bold;
+  }
+
   img {
     max-width: 100%;
   }
@@ -98,18 +102,8 @@
 }
 
 a.block {
-  .text-accent,
-  .link-primary,
   p {
     color: $color-body-text;
-  }
-
-  &:hover {
-    .text-accent,
-    .link-primary,
-    p {
-      color: inherit;
-    }
   }
 }
 
