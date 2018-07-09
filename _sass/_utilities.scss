@@ -13,6 +13,7 @@
 }
 
 .text-right { text-align: right; }
+.text-small { font-size: 85%; }
 
 .no-underline {
   text-decoration: none !important;
@@ -44,8 +45,8 @@
 
 
 /* Theme color utilities */
-.header-background { background-color: $color-background; }
-.header-top { border: none; background: $gray-dark; box-shadow: 0 0 8px rgba(0,0,0,0.6); }
+.header-background { background-color: $color-background; box-shadow: $box-shadow; }
+.header-top { border: none; background: $gray-dark; box-shadow: $box-shadow; }
 .header-title { color: $color-title; }
 .header-text { color: $color-foreground; }
 .header-social { fill: $color-foreground; }

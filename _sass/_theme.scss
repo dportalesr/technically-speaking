@@ -27,4 +27,4 @@ $code-background-color: $gray;
 $code-foreground-color: $gray-lightest;
 
 $body-background-color: $gray-lightest;
-$color-border: $gray-light;
+$color-border: lighten($gray-light, 20%);
