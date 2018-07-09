@@ -81,6 +81,7 @@ $headings-margin-top: 2rem;
   h#{$level}, .h#{$level} {
     $sm-margin-top: $headings-margin-top * (10 - $level) / 8;
     margin-top: clamp-unit($sm-margin-top, $heading-margin-min, 6rem);
+    text-shadow: $text-shadow;
 
      @media (max-width: $breakpoint-sm) {
       $sm-size: map_get($heading-sizes, $level) * 0.7;
@@ -96,9 +97,6 @@ a {
 
   &:hover, &:focus {
     text-decoration: underline dotted;
-  }
-  &:visited {
-    color: $color-secondary-link;
   }
 }
 

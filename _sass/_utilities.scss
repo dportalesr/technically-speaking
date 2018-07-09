@@ -5,6 +5,7 @@
   margin-top: 0.85em;
   word-wrap: break-word;
   font-weight: 800;
+  text-shadow: none;
 
   @media (min-width: $breakpoint-lg) {
     font-size: $h0-desktop;
@@ -44,7 +45,7 @@
 
 /* Theme color utilities */
 .header-background { background-color: $color-background; }
-.header-border { border-color: $gray-light; background: $gray-dark; }
+.header-top { border: none; background: $gray-dark; box-shadow: 0 0 8px rgba(0,0,0,0.6); }
 .header-title { color: $color-title; }
 .header-text { color: $color-foreground; }
 .header-social { fill: $color-foreground; }

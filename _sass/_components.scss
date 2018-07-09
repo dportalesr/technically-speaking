@@ -4,6 +4,7 @@
 
 .site-description {
   color: $gray-lightest;
+  text-shadow: none;
 }
 
 .prose {
@@ -12,6 +13,7 @@
 
   a {
     font-weight: $font-weight-bold;
+    text-shadow: $text-shadow;
   }
 
   img {
