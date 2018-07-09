@@ -9,7 +9,7 @@ date: 2017-07-23 09:00 -0500
 
 When launching the Rails console, an `invalid byte sequence in UTF-8` error prevented it from starting, with no apparent changes to my project code. The last line in the backtrace was something like:
 
-```bash
+```
 [...]/lib/ruby/gems/2.4.0/bundler/gems/rb-readline-fd882edcd145/lib/rbreadline.rb:6135:in `delete`: invalid byte sequence in UTF-8 (ArgumentError)
 ```
 
