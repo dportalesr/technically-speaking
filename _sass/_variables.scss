@@ -1,24 +1,25 @@
 // Font family
 $body-font-family: "Open Sans", Arial, sans-serif;
 $body-font-size: 1rem;
-$prose-font-size: 1.1rem;
+$prose-font-size: 1rem;
 
 // Type scale
 $h0-mobile: 2.5rem;
 $h0-desktop: 4.5rem;
 
-$h1-size: 3.2rem !default;
-$h2-size: 2.6rem !default;
-$h3-size: 2.1rem !default;
-$h4-size: 1.7rem !default;
-$h5-size: 1.3rem !default;
-$h6-size: 1.1rem !default;
+$h1-font-size: 3rem !default;
+$h2-font-size: 2.4rem !default;
+$h3-font-size: 2rem !default;
+$h4-font-size: 1.6rem !default;
+$h5-font-size: 1.3rem !default;
+$h6-font-size: 1.1rem !default;
 
 // Container width
 $container-width: 56rem;
 
 // Large breakpoint
 $breakpoint-lg: 52em;
+$breakpoint-sm: 36em;
 
 // Spacing unit
 $spacer: 0.5rem !default;
@@ -28,5 +29,12 @@ $spacer-1: $spacer !default; // 8px
 $spacer-2: ($spacer * 2) !default; // 16px
 $spacer-3: ($spacer * 4) !default; // 32px
 $spacer-4: ($spacer * 8) !default; // 64px
+
+$spacers: (
+  1: $spacer-1,
+  2: $spacer-2,
+  3: $spacer-3,
+  4: $spacer-4
+);
 
 $block-margin-bottom: 1rem;

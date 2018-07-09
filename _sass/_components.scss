@@ -69,18 +69,21 @@
 
     tr {
       border-top: 1px solid $color-border;
-    }
 
-    tr th {
-      border-top: 2px solid $color-border;
-      border-bottom: 2px solid $color-border;
+      th {
+        border-top: 2px solid $color-border;
+        border-bottom: 2px solid $color-border;
+      }
     }
   }
 
   :not(pre) > code[class*="language-"],
   pre[class*="language-"] {
-    border: 0;
     @extend %fullwidth;
+
+    border: 0;
+    margin-top: sp(3);
+    margin-bottom: sp(3);
   }
 
   code[class*="language-"] {
@@ -88,18 +91,23 @@
 
     display: block;
     margin: 0 auto;
+    padding: 0 sp(2);
     font-size: 0.9rem;
     line-height: 1.8;
   }
 }
 
 a.block {
-  .text-accent, .link-primary, p {
+  .text-accent,
+  .link-primary,
+  p {
     color: $color-body-text;
   }
 
   &:hover {
-    .text-accent, .link-primary, p {
+    .text-accent,
+    .link-primary,
+    p {
       color: inherit;
     }
   }

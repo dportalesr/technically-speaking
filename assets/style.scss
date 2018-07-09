@@ -6,4 +6,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800,800i');
 
 @import "theme";
+@import "variables",
+        "mixins",
+        "base",
+        "components",
+        "utilities";
+
 @import "prism";
