@@ -4,6 +4,7 @@
   line-height: 1.125;
   margin-top: 0.85em;
   word-wrap: break-word;
+  font-weight: 800;
 
   @media (min-width: $breakpoint-lg) {
     font-size: $h0-desktop;
@@ -21,7 +22,7 @@
 }
 
 .bold {
-  font-weight: 800;
+  font-weight: $font-weight-bold;
   font-style: italic;
 }
 .uppercase { text-transform: uppercase; }
@@ -177,7 +178,7 @@
 // Link styles for social icons
 .link-social {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   line-height: 1;
 
   &:hover {
@@ -187,7 +188,7 @@
 
 // Link styles for navigation
 .link-primary {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   font-style: italic;
   text-decoration: none !important;
 

@@ -38,7 +38,7 @@
   }
 
   dt {
-    font-weight: bold;
+    font-weight: $font-weight-bold;
     line-height: 1.25;
   }
 
@@ -57,7 +57,7 @@
     word-break: keep-all;
 
     th {
-      font-weight: bold;
+      font-weight: $font-weight-bold;
     }
 
     th,
@@ -111,4 +111,8 @@ a.block {
       color: inherit;
     }
   }
+}
+
+.post-headline {
+  font-weight: $font-weight-boldest;
 }
