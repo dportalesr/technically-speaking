@@ -5,7 +5,7 @@ title: Solving "Invalid byte sequence in UTF-8" error in Rails console
 date: 2017-07-23 09:00 -0500
 ---
 
-# Problem
+## Problem
 
 When launching the Rails console, an `invalid byte sequence in UTF-8` error prevented it from starting, with no apparent changes to my project code. The last line in the backtrace was something like:
 
@@ -13,7 +13,7 @@ When launching the Rails console, an `invalid byte sequence in UTF-8` error prev
 [...]/lib/ruby/gems/2.4.0/bundler/gems/rb-readline-fd882edcd145/lib/rbreadline.rb:6135:in `delete`: invalid byte sequence in UTF-8 (ArgumentError)
 ```
 
-# Solution
+## Solution
 
 Quickest solution: Locate and delete the `.irb-history` file.
 
@@ -27,7 +27,7 @@ If you're using the `pry` gem, the history will be actually saved in a file call
 
 Actually, this is more like a workaround, since the [real solution is still waiting to be merged](https://github.com/ConnorAtherton/rb-readline/pull/140)  at `rb-readline` gem repo (at the moment of writing this).
 
-# Explanation
+## Explanation
 
 Taking a closer look to the backtrace we can notice some calls to IRB's `load_history` method.
 
