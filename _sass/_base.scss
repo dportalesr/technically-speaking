@@ -27,6 +27,11 @@ ol, ul {
   padding-left: 1rem;
 }
 
+em {
+  font-weight: $font-weight-bold;
+  color: $color-text-accent-secondary;
+}
+
 p, ul, ol, dl, blockquote, table, pre {
   font-size: $prose-font-size;
   margin-bottom: $block-margin-bottom;
@@ -42,11 +47,11 @@ p, ul, ol, dl, blockquote, table, pre {
  * Basic styling
  */
 body {
-    font-family: $body-font-family;
-    font-size: $body-font-size;
-    line-height: 1.3;
-    color: $color-body-text;
-    background-color: $body-background-color;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  line-height: 1.3;
+  color: $color-body-text;
+  background-color: $body-background-color;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -94,6 +99,7 @@ $headings-margin-top: 2rem;
 a {
   color: $color-primary-link;
   text-decoration: none;
+  font-style: italic;
 
   &:hover, &:focus {
     text-decoration: underline dotted;

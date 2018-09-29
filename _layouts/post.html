@@ -5,7 +5,7 @@ layout: default
   <h1 class="post-headline" itemprop="name headline">{{ page.title | markdownify | unwrap }}</h1>
 
   <div class="my-3 border-top-thin">
-    <p class="my-2 bold"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+    <p class="my-2 bold text-accent-secondary"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
   </div>
 
   <div class="prose" itemprop="articleBody">

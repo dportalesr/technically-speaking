@@ -112,3 +112,13 @@ a.block {
 .post-headline {
   font-weight: $font-weight-boldest;
 }
+
+article li {
+  margin-bottom: sp(2);
+}
+
+footer {
+  p {
+    font-size: 80%;
+  }
+}

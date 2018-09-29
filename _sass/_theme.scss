@@ -1,8 +1,9 @@
 // Blue theme
 
 // Color variables
-$blue: #009DDB; //#009DDB;
-$blue-light: #00b7ff;
+$dark-blue: #003f66; //#009DDB;
+$blue: #006eb3; //#009DDB;
+$blue-light: #00a4e6;
 $gray-dark: #393e46;
 $gray: #40464f;
 $gray-light: #89929a;
@@ -13,12 +14,12 @@ $white: #fff;
 $color-background: $gray;
 $color-foreground: $white;
 
-$color-dot-accent: $blue-light;
-$color-title: $blue-light;
-
 $color-body-text: $gray;
-$color-text-accent: $blue;
-$color-code: $blue;
+$color-text-accent: $blue-light;
+$color-text-accent-secondary: $dark-blue;
+$color-text-accent-secondary: $color-body-text;
+$color-title: $blue-light;
+$color-dot-accent: $color-text-accent;
 
 $color-nav-link: $blue;
 $color-primary-link: $blue;

@@ -1,6 +1,6 @@
 <!-- Renders post date, title, and snippet of text. -->
 <div class="py-2 mb-2 prose">
-  <a class="no-underline bold text-accent" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a>
+  <a class="no-underline bold text-accent-secondary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a>
 
   <h2 class="h4 lh-condensed col-9 mt-0">
     <a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | markdownify | unwrap }}</a>
