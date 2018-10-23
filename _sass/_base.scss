@@ -118,20 +118,20 @@ code {
 blockquote {
   color: $gray-light;
   border-left: $spacer-1 solid $color-border;
-  line-height: 1.375;
+  line-height: 1.6;
   padding: 0 1rem;
 
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   @media (min-width: $breakpoint-lg) {
-    padding-left: $spacer-3;
+    padding-left: $spacer-2;
     margin: $spacer-2 0;
     max-width: (11 / 10 * 100%);
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.1rem;
     }
   }
 }

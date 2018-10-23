@@ -23,18 +23,6 @@
   p, ul, ol, dl, blockquote, table, pre {
   }
 
-  blockquote {
-    p {
-      font-size: 1.2rem;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-      p {
-        font-size: 1.4rem;
-      }
-    }
-  }
-
   hr {
     color: $color-border;
     border-style: solid;
