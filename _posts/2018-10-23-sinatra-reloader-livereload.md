@@ -1,14 +1,10 @@
 ---
 layout: post
-title: Sinatra Reload + LiveReload
+title: Sinatra Reloader + LiveReload
 date: 2018-10-23 01:18 -0500
+excerpt: Development flow in Sinatra is slow out-of-the-box. Sinatra Reloader surely is fast, but we can go faster.
 ---
-
 <img class="post-frontimage" src="/assets/img/reloading.jpg" alt="RELOADING!">
-
-# Sinatra Reloader
-
-## Background
 
 [Sinatra::Contrib](http://sinatrarb.com/contrib/) is a project that basically extends the core capabilities of Sinatra without adding significant overhead. It provides useful and often asked functionality in the form of extensions.
 
@@ -36,9 +32,7 @@ In the other hand, if you want to use the `helpers` method by referencing a modu
 require_relative 'app/my_helpers'
 
 helpers MyHelpers
-
 # or the more verbose
-
 helpers do
   include MyHelpers
 end
