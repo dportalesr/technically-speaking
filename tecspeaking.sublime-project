@@ -2,6 +2,11 @@
 	"folders":
 	[
 		{
+			"folder_exclude_patterns":
+			[
+				".sass-cache",
+				"_site"
+			],
 			"path": "."
 		}
 	]
