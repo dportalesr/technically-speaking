@@ -113,6 +113,15 @@ a.block {
   font-weight: $font-weight-boldest;
 }
 
+.post-frontimage {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: $box-shadow;
+  border-radius: 0.3rem;
+}
+
 article li {
   margin-bottom: sp(2);
 }
