@@ -2,7 +2,7 @@
 layout: post
 title: Sinatra Reloader + LiveReload
 date: 2018-10-23 01:18 -0500
-excerpt: Development flow in Sinatra is slow out-of-the-box. Sinatra Reloader surely is fast, but we can go faster.
+excerpt: Development flow in Sinatra is slow as it comes. Sinatra Reloader surely is fast, but we can go faster.
 ---
 <img class="post-frontimage" src="/assets/img/reloading.jpg" alt="RELOADING!">
 
