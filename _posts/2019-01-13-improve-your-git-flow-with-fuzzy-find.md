@@ -1,5 +1,6 @@
 ---
 layout: post
+excerpt: You really don't have to type those long file paths and references when using git from the command line. Here comes some help!
 title: Improve your Git flow with Fuzzy Find
 date: 2019-01-13 18:03 -0600
 ---
