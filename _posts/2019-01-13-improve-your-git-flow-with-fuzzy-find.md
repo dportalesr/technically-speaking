@@ -33,7 +33,7 @@ This is a huge help for our problem, and most of the times it's enough. But if y
 
 > "Approximate string matching" (often colloquially referred to as "fuzzy string searching") is the technique of finding strings that match a pattern approximately (rather than exactly).
 
-So we can use some algorightms to have a more accurate solution of our problem.
+So we can use some algorightms to have a more accurate solution to our problem.
 
 ### fzf
 
@@ -64,7 +64,7 @@ The alias above will let us fuzzy find a file from the **list of files not ignor
 
 See below for examples.
 
-**NOTE**: Some of the following alias/functions use the same names of Oh-my-Zsh git aliases, so, if you're already using them, you may need to unalias them first, right before the new definition. Example:
+**NOTE**: Some of the following aliases/functions use the same names of Oh-my-Zsh git aliases, so, if you're already using them, you may need to unalias them first, right before the new definition. Example:
 
 ```bash
 unalias gco
